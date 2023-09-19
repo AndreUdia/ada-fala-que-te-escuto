@@ -14,6 +14,21 @@ public class Empresa {
         BANCO, LIVRARIA, ACOUGUE, PADARIA, OFICINA, FLORICULTURA
     }
 
+    public Empresa(){
+    }
 
+    public Empresa(UUID uuid, String nome, Setor setor) {
+        this.uuid = uuid;
+        this.nome = nome;
+        this.setor = setor;
+    }
 
+    @Override
+    public String toString() {
+        return "Empresa{" +
+                "uuid=" + uuid +
+                ", nome='" + nome + '\'' +
+                ", setor=" + setor +
+                '}';
+    }
 }
